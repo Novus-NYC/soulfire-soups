@@ -47,7 +47,7 @@ export default function Footer() {
             >
               Order on Square
             </Link>
-            <p>Seasonal batches, catering, and special offerings are shared as available.</p>
+            <p>Seasonal batches and special offerings are shared as available.</p>
           </div>
         </div>
       </div>

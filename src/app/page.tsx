@@ -2,7 +2,7 @@ import Link from "next/link"
 import ButtonLink from "@/lib/components/button-link"
 import Reveal from "@/lib/components/reveal"
 import SoupVisual from "@/lib/components/soup-visual"
-import { brandPromise, inspirations, menuItems, squareOrderUrl, stockImages, values } from "@/lib/site-data"
+import { brandPromise, inspirations, menuItems, photos, squareOrderUrl, stockImages, values } from "@/lib/site-data"
 
 export default function HomePage() {
   return (
@@ -42,8 +42,8 @@ export default function HomePage() {
                 color="#366834"
                 label="the craft of gathering"
                 className="min-h-52"
-                image={stockImages.goldenBowl}
-                alt="A golden soup bowl with a generous garnish"
+                image={photos.southernComfort}
+                alt="Southern Comfort: collard greens and black-eyed peas"
                 priority
               />
               <SoupVisual
@@ -60,8 +60,8 @@ export default function HomePage() {
                 color="#d99b2d"
                 label="roots in every bowl"
                 className="min-h-56"
-                image={stockImages.rusticSoup}
-                alt="A comforting soup bowl served with bread"
+                image={photos.turkeyChili}
+                alt="Roasted and smoked turkey chili"
               />
               <div className="border-y border-brand-brown/20 py-5">
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand-red">
@@ -132,11 +132,11 @@ export default function HomePage() {
         <Reveal className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.92fr_1.08fr]">
           <SoupVisual
             color="#5a3e2c"
-            label="a story in every bowl"
+            label="Patricia, founder"
             tone="light"
             className="min-h-[420px]"
-            image={stockImages.sharedTable}
-            alt="Friends gathered at a table full of food and candles"
+            image={photos.patricia}
+            alt="Patricia, founder of SoulFire Soups, in her kitchen"
           />
           <div className="self-center">
             <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-brand-red">
@@ -218,37 +218,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-brand-green px-5 py-16 text-brand-blush lg:px-8">
-        <Reveal className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div>
-            <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-brand-gold">
-              Catering
-            </p>
-            <h2 className="font-display text-5xl font-bold leading-tight text-brand-blush md:text-6xl">
-              Gather around the pot.
-            </h2>
-            <p className="mt-5 max-w-xl text-lg leading-8 text-brand-blush/82">
-              From office lunches to family reunions, SoulFire can bring
-              larger-batch soups, sides, and warmth to the table.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="/pages/catering" variant="light">Explore Catering</ButtonLink>
-              <ButtonLink href={squareOrderUrl} variant="light" external>
-                Order Online
-              </ButtonLink>
-            </div>
-          </div>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {["Office lunches", "Family reunions", "Community events", "Small celebrations"].map((item) => (
-              <div key={item} className="border border-brand-blush/28 p-6">
-                <p className="font-display text-2xl font-bold text-brand-blush">
-                  {item}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Reveal>
-      </section>
     </div>
   )
 }

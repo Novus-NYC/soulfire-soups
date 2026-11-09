@@ -5,7 +5,7 @@ import { squareOrderUrl, stockImages } from "@/lib/site-data"
 
 export const metadata: Metadata = {
   title: "Contact | SoulFire Soups",
-  description: "Order current SoulFire Soups batches or ask about catering.",
+  description: "Order current SoulFire Soups batches or ask about seasonal offerings.",
 }
 
 export default function ContactPage() {
@@ -31,16 +31,16 @@ export default function ContactPage() {
           />
           <div className="border-y border-brand-brown/20 py-6">
             <p className="text-lg leading-8 text-brand-brown/85">
-              Order current batches through Square. For catering, seasonal
-              questions, or special requests, use the Square page as the most
+              Order current batches through Square. For seasonal questions or
+              special requests, use the Square page as the most
               current point of contact until a dedicated inbox is confirmed.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href={squareOrderUrl} external>
                 Order Online
               </ButtonLink>
-              <ButtonLink href="/pages/catering" variant="secondary">
-                Explore Catering
+              <ButtonLink href="/pages/menu" variant="secondary">
+                Explore the Menu
               </ButtonLink>
             </div>
           </div>

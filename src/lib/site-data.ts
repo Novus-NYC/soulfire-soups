@@ -14,15 +14,43 @@ export const stockImages = {
   communityTable: "https://images.unsplash.com/photo-1721180672611-eb0489be150f?auto=format&fit=crop&w=1800&q=85",
 }
 
+// Photos supplied by Patricia (Oct 16, 2026).
+export const photos = {
+  southernComfort: "/photos/southern-comfort.jpg",
+  turkeyChili: "/photos/smoked-turkey-chili.jpg",
+  patricia: "/photos/patricia.jpg",
+}
+
 export const navItems = [
   { href: "/", label: "Home" },
   { href: "/pages/menu", label: "Menu" },
   { href: "/pages/about", label: "Our Story" },
-  { href: "/pages/catering", label: "Catering" },
   { href: "/pages/contact", label: "Contact" },
 ]
 
 export const menuItems = [
+  {
+    name: "Southern Comfort",
+    tag: "Chef's choice",
+    color: "#366834",
+    ingredients: ["collard greens", "black-eyed peas", "smoked turkey (optional)"],
+    dietary: "Vegetarian | Smoked turkey add-on",
+    detail:
+      "A Southern classic that brings earthy black-eyed peas and tender collard greens together in a savory vegetable broth.",
+    image: photos.southernComfort,
+    alt: "A bowl of collard greens and black-eyed peas with smoked turkey",
+  },
+  {
+    name: "Roasted & Smoked Turkey Chili",
+    tag: "Hearty",
+    color: "#cc2127",
+    ingredients: ["turkey", "beans", "homemade broth"],
+    dietary: "Roasted warmth",
+    detail:
+      "A rich homemade broth layered with smoky flavor, tender roasted turkey, and beans.",
+    image: photos.turkeyChili,
+    alt: "A bowl of smoked turkey chili with beans",
+  },
   {
     name: "Heritage Peanut Stew",
     tag: "Signature",
@@ -109,13 +137,6 @@ export const storyChapters = [
   },
 ]
 
-export const cateringMoments = [
-  "Office lunches",
-  "Family gatherings",
-  "Community events",
-  "Small celebrations",
-]
-
 export const values = [
   {
     title: "Small batch",
@@ -133,11 +154,4 @@ export const values = [
     title: "Made to gather",
     text: "Food designed to bring people around the same table.",
   },
-]
-
-export const cateringSteps = [
-  "Tell us about your gathering",
-  "Confirm availability and menu",
-  "Coordinate quantity and dietary needs",
-  "SoulFire handles the soup",
 ]
